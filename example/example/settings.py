@@ -89,11 +89,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Strava settings
-CLIENT_ID = None
-CLIENT_SECRET = None
+STRAVA_CLIENT_ID = None
+STRAVA_CLIENT_SECRET = None
 STRAVA_REDIRECT = "http://localhost:8000/login/"
 try:
-    from stravauth_settings import CLIENT_ID, CLIENT_SECRET
+    from stravauth_settings import STRAVA_CLIENT_ID, STRAVA_CLIENT_SECRET
 except ImportError:
     pass
 

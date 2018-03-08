@@ -11,7 +11,7 @@ def get_stravauth_url(approval_prompt="auto", scope="write"):
     
     strava_url = "https://app.strava.com/oauth/authorize"
     vars = ""
-    vars += "client_id=%s" % settings.CLIENT_ID
+    vars += "client_id=%s" % settings.STRAVA_CLIENT_ID
     vars += "&response_type=%s" % "code"
     vars += "&redirect_uri=%s" % settings.STRAVA_REDIRECT
     vars += "&approval_prompt=%s" % approval_prompt

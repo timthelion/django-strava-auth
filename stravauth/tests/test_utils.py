@@ -17,7 +17,7 @@ class TestStravauthUtils(TestCase):
         self.assertEqual(url, "https://app.strava.com/oauth/authorize")
         
         self.assertEqual(len(vars), 5)
-        self.assertEqual(vars["client_id"], str(settings.CLIENT_ID))
+        self.assertEqual(vars["client_id"], str(settings.STRAVA_CLIENT_ID))
         self.assertEqual(vars["response_type"], "code")
         self.assertEqual(vars["redirect_uri"], settings.STRAVA_REDIRECT)
         self.assertEqual(vars["approval_prompt"], "auto")

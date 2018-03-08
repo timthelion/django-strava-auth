@@ -9,8 +9,8 @@ class StravaV3Backend(object):
     Authenticate using the Strava V3 API.
     """
     def authenticate(self, code):
-        client_id = settings.CLIENT_ID
-        client_secret = settings.CLIENT_SECRET
+        client_id = settings.STRAVA_CLIENT_ID
+        client_secret = settings.STRAVA_CLIENT_SECRET
         
         # Make the request to the API
         c = StravaClient()
